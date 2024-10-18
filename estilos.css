@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8dcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor {
+    background-color: rgb(191, 205, 225);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 350px;
+}
+
+input, select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.info {
+    size: 7px;
+    text-decoration: underline;
+}
+
+.filtros {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tarea {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.tarea.alta {
+    background-color: red;
+    color: white;
+}
+
+.tarea.media {
+    background-color: orange;
+    color: white;
+}
+
+.tarea.baja {
+    background-color: yellow;
+    color: black;
+}
+
+.tarea.completada span {
+    text-decoration: line-through;
+}

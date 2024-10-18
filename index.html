@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Lista de Tareas Avanzada</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h3>Gustavo Weckesser-JSPre3</h3>
+        <h1>Lista de Tareas Avanzada</h1>
+        <input type="text" id="nombreTarea" placeholder="Nombre de la tarea...">
+        <p class="info">Prioridad:</p>
+        <select id="prioridadTarea">
+            <option value="alta">Alta</option>
+            <option value="media">Media</option>
+            <option value="baja">Baja</option>
+        </select>
+        <button id="botonAgregar">Agregar Tarea</button>
+        <p class="info">Filtrar y mostrar</p>
+        <div class="filtros">
+            <div class="menu">
+                <label>Prioridad</label>
+                <select id="filtroPrioridad">
+                    <option value="todas">Todas</option>
+                    <option value="alta">Alta</option>
+                    <option value="media">Media</option>
+                    <option value="baja">Baja</option>
+                </select>
+            </div>
+
+            <div class="menu">
+                <label>Condición</label>
+                <select id="filtroCondicion">
+                    <option value="todas">Todas</option>
+                    <option value="completas">Completadas</option>
+                    <option value="pendientes">Pendientes</option>
+                </select>
+            </div>
+        </div>
+
+        <ul id="listaTareas"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
